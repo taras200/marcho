@@ -22,6 +22,8 @@
     "slick-carousel": "^1.8.1"
   },
   "dependencies": {
-    "autoprefixer": "^10.4.20"
+    "autoprefixer": "^10.4.20",
+    "install": "^0.13.0",
+    "magnific-popup": "^1.2.0"
   }
 }
