@@ -14,4 +14,14 @@ $(function(){
     preloader: false,
     fixedContentPos: false
   });
+
+  $('.star').rateYo({
+    readOnly:true, 
+    rating:4,
+    starWidth: "17px",
+    normalFill: "#ccccce",
+    ratedFill: "#ffc35b"
+  });
+
+  
 })
