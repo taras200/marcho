@@ -19,6 +19,7 @@ $(function(){
     readOnly:true, 
     rating:4,
     starWidth: "17px",
+    fullStar: true,
     normalFill: "#ccccce",
     ratedFill: "#ffc35b"
   });
