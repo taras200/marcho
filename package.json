@@ -18,9 +18,14 @@
     "gulp-sass": "^5.1.0",
     "gulp-uglify": "^3.0.2",
     "jquery": "^3.7.1",
-    "sass": "^1.45.0"
+    "rateyo": "^2.3.2",
+    "sass": "^1.45.0",
+    "slick-carousel": "^1.8.1",
+    "star-rating-svg": "^3.5.0"
   },
   "dependencies": {
-    "autoprefixer": "^10.4.20"
+    "autoprefixer": "^10.4.20",
+    "install": "^0.13.0",
+    "magnific-popup": "^1.2.0"
   }
 }
