@@ -86,7 +86,6 @@ function watching() {
 
 }
 
-
 exports.styles = styles;
 exports.scripts = scripts;
 exports.browsersync = browsersync;
