@@ -1948,13 +1948,13 @@ background-position: center right;
     a{
       
       path {
-          fill: $accent;
+          fill: #727277
         }
       margin-right: 12px;
       vertical-align: middle;
       &:hover{
         path{
-          fill: #727277;
+          fill: $accent;
         }
       }
     }
