@@ -1,4 +1,12 @@
 $(function(){
+
+  $('.menu__btn').on('click',function(){
+    $('.menu__list').toggleClass('menu__list--active');
+  });
+  $('.shop__filters-btn').on('click',function(){
+    $('.shop__filters').slideToggle();
+  });
+
   $('.blog-page__slider').slick({
     prevArrow: '<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg"  width="7px" height="14px" viewBox="0 0 7 14" version="1.1"><g><path  d="M 0.90625 6.382812 C 0.632812 6.722656 0.632812 7.277344 0.90625 7.621094 L 4.40625 11.996094 C 4.679688 12.335938 5.125 12.335938 5.398438 11.996094 C 5.671875 11.652344 5.671875 11.097656 5.398438 10.757812 L 2.390625 7 L 5.394531 3.242188 C 5.667969 2.902344 5.667969 2.347656 5.394531 2.003906 C 5.121094 1.664062 4.675781 1.664062 4.402344 2.003906 L 0.902344 6.378906 Z M 0.90625 6.382812 "/></g></svg></button>',
     nextArrow: '<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" width="7px" height="14px" viewBox="0 0 7 14" version="1.1"><g><path d="M 6.09375 6.382812 C 6.367188 6.722656 6.367188 7.277344 6.09375 7.621094 L 2.59375 11.996094 C 2.320312 12.335938 1.875 12.335938 1.601562 11.996094 C 1.328125 11.652344 1.328125 11.097656 1.601562 10.757812 L 4.609375 7 L 1.605469 3.242188 C 1.332031 2.902344 1.332031 2.347656 1.605469 2.003906 C 1.878906 1.664062 2.324219 1.664062 2.597656 2.003906 L 6.097656 6.378906 Z M 6.09375 6.382812 "/></g></svg></button>',
@@ -21,6 +29,14 @@ $(function(){
     slidesToScroll: 1,
     vertical: true,
     draggable:false,
+    responsive:[
+      {
+        breakpoint:996,
+        settings:{
+          draggable: true,
+        }
+      }
+    ]
   });
   $('.product-slide__big').slick({
     asNavFor: '.product-slide__thumb',
@@ -37,10 +53,13 @@ $(function(){
   });
   $('.button-list').on('click', function () {
     $('.product-item').addClass('product-item--list');
+    $('.shop-content__inner').addClass('shop-content__nogrid');
   });
 
   $('.button-grid').on('click', function () {
     $('.product-item').removeClass('product-item--list');
+    $('.shop-content__inner').removeClass('shop-content__nogrid');
+
   });
 
   $('.select-style, .product-info__num').styler();
@@ -124,6 +143,7 @@ $(function(){
 
   var deadline = $('.promo__clock').attr('data-time');
   initializeClock('.promo__clock', deadline);
+
 
   
 })
